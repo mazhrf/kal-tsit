@@ -1,0 +1,171 @@
+html {
+    background-color: whitesmoke;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Audiowide", sans-serif;
+
+    margin: 0;
+    padding: 0;
+  }
+
+h2, h3 {
+    color:#7ed02d;
+}
+
+#pros h3 {
+    color: greenyellow;
+}
+
+#cons h3 {
+    color: red; 
+}
+
+.jumbotron {
+    font-family: "Orbitron", sans-serif;
+
+    font-size: 18px;
+    padding: 50px;
+    background-color:#5aa410;
+    background-image: url(../img/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: black;
+}
+
+main {
+    padding: 20px;
+  
+    display: flex;
+    gap: 1.5rem;
+}
+  
+  #content {
+    flex: 3;
+ 
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+
+
+
+aside {
+    flex:1;
+  }
+  
+  header {
+    display: inline;
+  }
+
+.ftimage {
+    width: 100%;
+    max-height: 500px;
+  
+    object-fit: cover;
+    object-position: center;
+}
+
+.skin {
+    width: 100%;
+    max-height: 1000px;
+  
+    object-fit: cover;
+    object-position: center;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+   
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color: #4d9209;
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    font-size: 18px;
+  
+    font-weight: 400;
+    text-decoration: none;
+  
+    color: black;
+}
+
+nav a:hover {
+    font-weight: bold;
+  }
+  
+  .section {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+.aside {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+    text-align: center
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(18, 17, 17);
+  
+    text-align: center;
+  }
+
+
+  .notification {
+    position: fixed;
+    bottom: 15px;
+    right: 15px; 
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+.notification video {
+    width: 250px;
+}
+
+  @media screen and (max-width: 1248px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+}
